@@ -22,17 +22,17 @@ async function getAPI() {
                 <h2>${info[i].name}</h2>
                 <p><span>Rating:</span> ${info[i].rating}</p>
                 <p><span>Number of tags:</span> ${info[i].tags.length}</p>
-                </div>`
+                </div>`;
 
             }
         }
 
         catch (errorMessage) {
-        container.innerHTML = displayError();
+        container.innerHTML = displayError("Omg! You broke it!");
         console.log(errorMessage);
     
     }   finally {
-        console.log("This will run whether there is an error not, and I`m not sure why we need it 😅");
+        console.log("This will run whether there is an error or not, and I`m not sure why we need it 😅");
     }
 };
     
